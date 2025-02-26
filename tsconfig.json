@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Target ES5 for broader browser compatibility
+    "lib": ["dom", "dom.iterable", "esnext"], // Include DOM and ESNext libraries
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "esModuleInterop": true, // Enable ES module interoperability
+    "allowSyntheticDefaultImports": true, // Allow synthetic default imports
+    "strict": true, // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "module": "esnext", // Use ES modules
+    "moduleResolution": "node", // Use Node.js-style module resolution
+    "resolveJsonModule": true, // Allow importing JSON files
+    "isolatedModules": true, // Ensure each file can be transpiled independently
+    "noEmit": true, // Do not emit JavaScript files (handled by Webpack/Rollup)
+    "jsx": "react-jsx", // Use the new JSX transform (React 17+)
+    "baseUrl": "./src", // Base directory for module resolution
+    "paths": {
+      "@components/*": ["components/*"], // Alias for components
+      "@steps/*": ["steps/*"], // Alias for steps
+      "@assets/*": ["assets/*"], // Alias for assets
+      "@types/*": ["types/*"] // Alias for types
+    }
+  },
+  "include": ["src"], // Include all files in the src directory
+  "exclude": ["node_modules", "build"] // Exclude node_modules and build directory
+}
