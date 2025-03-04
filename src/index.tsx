@@ -14,7 +14,7 @@ const darkTheme = createTheme({
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-console.log("inside the index component")
+
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={darkTheme}>
