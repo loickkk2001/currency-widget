@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import react,  { useState } from "react";
 import { Stepper, Step, StepLabel, Box, Typography } from '@mui/material';
 import ExchangeForm from '../steps/ExchangeForm';
 import SenderKYC from '../steps/SenderKYC';
@@ -92,6 +92,6 @@ const CurrencyWidget = ({ companyName = 'Dikalo' }: { companyName?: string }) =>
       </Box>
     </Box>
   );
-};
+}
 
 export default CurrencyWidget;

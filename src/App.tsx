@@ -5,8 +5,9 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import CurrencyWidget from './Components/currencyWidget';
-import ExchangeForm from '@steps/ExchangeForm';
-import { TransactionDetails } from 'types';
+import ExchangeForm from './steps/ExchangeForm';
+import { TransactionDetails } from './types';
+import 'react/jsx-runtime';
 
 // Create a dark theme with custom primary and secondary colors
 const theme = createTheme({
